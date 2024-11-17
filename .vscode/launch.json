@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftIntro}",
+            "name": "Debug SwiftIntro",
+            "program": "${workspaceFolder:SwiftIntro}/.build/debug/SwiftIntro",
+            "preLaunchTask": "swift: Build Debug SwiftIntro"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:SwiftIntro}",
+            "name": "Release SwiftIntro",
+            "program": "${workspaceFolder:SwiftIntro}/.build/release/SwiftIntro",
+            "preLaunchTask": "swift: Build Release SwiftIntro"
+        },
+        {
+            "name": "Run Swift",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/.build/debug/SwiftIntro",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "swift: build",
+            "console": "integratedTerminal"
+          }
+    ]
+    
+}
